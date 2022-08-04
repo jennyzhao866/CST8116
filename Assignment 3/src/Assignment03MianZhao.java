@@ -20,7 +20,7 @@ public class Assignment03MianZhao {
 			diceRolls[roll - 1] = diceRolls[roll - 1] + 1; // adjust 1-10 value to 0-9 for index
 		}
 		// run a report
-		for (int index = 0; index <= diceRolls.length; index++) { // crashes
+		for (int index = 0; index < diceRolls.length; index++) { // change <= to <,no crashes
 			System.out.printf("Count of %d is: %d%n", (index + 1), diceRolls[index]);
 			totalRolls = totalRolls + diceRolls[index];
 		}
